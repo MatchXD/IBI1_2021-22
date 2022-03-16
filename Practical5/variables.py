@@ -11,6 +11,6 @@ print ("d>e");print (d>e)
 X = True
 Y = False
 W = X and Y
-
+prunt (W)
 
 
