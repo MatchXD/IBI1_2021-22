@@ -1,6 +1,6 @@
-#Start with one cut and increase one cut each time calculate the maximum 
-#number of pieces of cake that can be cut. Stop until the maximum number 
-#of pieces is greater than or equal to 64
+#Start with one cut and increase one cut each time  
+#calculate the maximum number of pieces of cake that can be cut.  
+#Stop until the maximum number of pieces is greater than or equal to 64
 n=1
 p=0
 while p < 64:
