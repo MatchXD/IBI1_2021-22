@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer:Generate ten random integers from 1 to 100 and print the last integer
+# Answer:Generate ten random integers from 1 to 100 and prints the last generated integer
 
 # Import libraries
 # randint allows drawing a random number,
@@ -11,8 +11,10 @@ from random import randint
 from math import ceil
 
 progress=0
+#The loop is repeated 10 times
 while progress<10:
         progress+=1
+#Generate a random integer between 1 and 100
         n = randint(1,100)
-
+#The last integer generated is printed after the loop is completed
 print(n)
