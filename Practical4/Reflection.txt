@@ -1,0 +1,7 @@
+I'm having trouble with the git push in step 3
+After the teacher and students' guidance and answers finally finished the whole practical
+I think the practical operation is very suitable for beginners to complete.
+It can further strengthen the knowledge and operation of git.
+But I still have some questions about what is the difference between git add and git commit.
+Why do I have to use these two commands after every modification.
+Thank you for your guidance
