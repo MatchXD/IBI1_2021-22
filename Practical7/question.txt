@@ -1,0 +1,15 @@
+the question:
+South Korea, Kenya, and Colombia are three countries in different parts of the world,but with similar populations. 
+Plot the total number of COVID cases over time in all three.
+
+line number corresponds to where the question is addressed in the covid.py file:
+31-47
+
+result:
+As we can see in the plot, South Korea had the earliest onset of COVID-19.
+The COVID-19 outbreak in South Korea increased sharply from around 2020/2/21 and slowed down a bit by around 2020/3/10.
+The Colombian outbreak began around 2020/3/7 and has seen a significant increase in COVID-19 growth around 2020/3/16.
+Kenya's COVID-19 outbreak was the latest, first appearing around 2020/3/14. The growth has been more modest.
+While the total population of the three countries is similar, the total cases of COVID-19 is very different.
+The earlier a country got cases, the worse it went.
+
