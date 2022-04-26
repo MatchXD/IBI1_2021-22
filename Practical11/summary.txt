@@ -1,0 +1,9 @@
+I find that:
+the alignment score between human DLX5 protein and mouse DLX5 protein is 1490
+the percentage of identical amino acids of them is 96.54%
+the alignment score between human DLX5 protein and random protein is -351
+the percentage of identical amino acids of them is 2.77%
+the alignment score between mouse DLX5 protein and random protein is -348
+the percentage of identical amino acids of them is 3.11%
+So:
+Even though humans and mice are distantly related, there are genetic similarities
