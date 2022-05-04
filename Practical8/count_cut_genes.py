@@ -4,7 +4,7 @@ fname = input('please write a filename as the new fasta file to be written to: '
 output = open(fname,'w')
 for line in seq:
     if  line.startswith('Y'):
-        gene = line[0:6]
+        gene = line[0:7]
     else:
         count = 1
         DNA = line
