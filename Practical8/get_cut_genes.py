@@ -9,9 +9,10 @@ for line in seq:
     if '>' in line:
         if total_line != '':
             if 'GAATTC' in total_line:
-                gene= total_line[1: 7]
-                list = re.findall(r'.+](.+)',total_line)
-                DNA = list[0]
+                list1 = re.findall(r'.+gene:(.+?)\s', total_line)
+                gene = list1[0]
+                list2 = re.findall(r'.+](.+)',total_line)
+                DNA = list2[0]
                 num = len(DNA)
                 line1 = gene + '      ' + str(num) + '\n'
                 line2 = DNA + '\n'
