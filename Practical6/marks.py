@@ -6,10 +6,12 @@ print (sorted(marks))
 #Prints the data in the Marks array in positive order
 #I had help from instructor Robert Young in IBI1 lecture to create a boxplot.  
 #I had help to change the color from https://blog.csdn.net/weixin_40683253/article/details/87857194
-plt.boxplot(marks,vert=True,notch=False,showmeans=True,meanline=False,showbox=True,
+plt.boxplot(marks,labels= ['Rob'], vert=True,notch=False,showmeans=True,meanline=False,showbox=True,
             showcaps=True,showfliers=True,patch_artist=True,boxprops={'facecolor':'skyblue','color':'blue'})
 #gave plot a title "marks"
 plt.title('marks')
+plt.xlabel('Person')
+plt.ylabel('Marks')
 plt.show()
 #I had help to calculate the average from https://blog.csdn.net/reyyy/article/details/108279103
 average=np.mean(marks)
