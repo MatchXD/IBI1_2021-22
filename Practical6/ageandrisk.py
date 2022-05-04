@@ -14,7 +14,7 @@ x=np.array(paternal_age)
 y=np.array(chd)
 #construct a scatter plot from the data
 #I had help from instructor Robert Young in IBI1 lecture to create a scatter.
-#I had help to change the color from https://www.runoob.com/matplotlib/matplotlib-scatter.html
+#I had help to change the color from https://www.runoob.com/matplotlib/matplotlib-scatter.html[Accessed 23 March 2022]
 plt.scatter(x,y,marker='o',c="green")
 plt.xlabel('age of father')
 plt.ylabel('risk of offspring')
