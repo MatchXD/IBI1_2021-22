@@ -22,6 +22,14 @@ Y = False
 W = X and Y
 #print the value of W
 print ("W is",W)
-
+#added
+X = False
+Y = False
+W = X and Y
+print ('W is',W)
+X = True
+Y = True
+W = X and Y
+print ('W is',W)
 
 
