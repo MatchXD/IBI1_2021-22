@@ -44,6 +44,9 @@ for term in terms:
     if 'translation' in string:
         dic2 = {}
         num2.append(num_go(ID))
+    if 'Translation' in string:
+        dic2 = {}
+        num2.append(num_go(ID))
 
 print('the number of terms is:', n)
 
