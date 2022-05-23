@@ -5,9 +5,7 @@ https://blog.csdn.net/qq_39353327/article/details/104903621[access:2022/4/20]
 '''
 import re
 DNA= input('DNA sequence string:')
-x = input('nucleotides:')
 DNA = DNA.upper()
-x = x.upper()
 
 def content (x):
     group = re.findall(x,DNA)
@@ -15,6 +13,10 @@ def content (x):
     result = "%.2f%%" % (count/len(DNA)*100)
     print('the content of',x,'is:',result)
 
-content(x)
+content('A')
+content('T')
+content('C')
+content('G')
+
 
 
