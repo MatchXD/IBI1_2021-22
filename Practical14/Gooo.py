@@ -2,6 +2,9 @@ from xml.dom.minidom import parse
 import xml.dom.minidom
 import matplotlib.pyplot as plt
 from collections import defaultdict
+import sys
+
+sys.setrecursionlimit(3000)
 
 DOMTree = xml.dom.minidom.parse("go_obo.xml")
 collection = DOMTree.documentElement
@@ -12,13 +15,12 @@ num = []
 num2 = []
 
 def num_go (x):
-    global m
+    global dic2
     for i in range(0,len(dic[x])):
-        sub = dic[x][i]
-        m += 1
-        if sub in dic:
-            num_go(sub)
-    return m
+        dic2[dic[x][i]] = 0
+        if dic[x][i] in dic:
+            num_go(dic[x][i])
+    return len(dic2.keys())
 
 for term in terms:
     n += 1
@@ -31,14 +33,14 @@ for term in terms:
         dic[ParentGo].append(ID)
 
 for term in terms:
+    dic2 = {}
     string1 = term.getElementsByTagName('id')[0]
     ID = string1.childNodes[0].data
-    m = 0
     num.append(num_go(ID))
     judgment = term.getElementsByTagName('defstr')[0]
     string = judgment.childNodes[0].data
     if 'translation' in string:
-        m = 0
+        dic2 = {}
         num2.append(num_go(ID))
 '''
 for term in terms:
@@ -79,13 +81,10 @@ plt.show()
 
 plt.boxplot(num2, vert=True, whis=1.5, patch_artist=True, meanline=False, showbox=True, showcaps=True,
             showfliers=True,notch=False)
-plt.title('the distribution of child nodes across terms associated with translation')
+plt.title('boxplot of the distribution of child nodes across terms associated with translation')
 plt.xlabel('childNodes')
 plt.ylabel('number')
 plt.show()
 
-#the 'translation' terms contain a smaller number of child nodes than the overall Gene Ontology
+print('the translation terms contain a smaller number of child nodes than the overall Gene Ontology')
 
-#print(n)
-#print(dic)
-#print(num)
